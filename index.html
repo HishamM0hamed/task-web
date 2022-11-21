@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Button Ripple Effect | codingNepal</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <a href="#" class="btn"><span> Button </span></a>
+
+      <script>
+        const btn = document.querySelector('.btn');
+        btn.onmousemove= function(e){
+            const x =e.pageX - btn.offsetLeft;
+            const y =e.pageY - btn.offsetTop;
+
+            btn.syle.setproperty('--x',x + 'px')
+            btn.syle.setproperty('--y',y + 'px')
+
+        }   
+   
+      </script>
+   
+
+   </body>
+
+
+</html>
